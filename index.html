@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Одил и Кирил — Бухара</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f6f5;--card:#fff;--ink:#12303a;--mute:#5a7279;--line:#d5e2e0;--accent:#0f7c86;--accent-ink:#fff;--gold:#b9801a;--ok:#1f8a4c;--off:#a24b3b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a1e;--card:#15262b;--ink:#e8f1f0;--mute:#93aeb2;--line:#25404620;--line:#264046;--accent:#3fc1cc;--accent-ink:#06262a;--gold:#e0a84a;--ok:#4cc884;--off:#e48c7b}}
+:root[data-theme="dark"]{--bg:#0e1a1e;--card:#15262b;--ink:#e8f1f0;--mute:#93aeb2;--line:#264046;--accent:#3fc1cc;--accent-ink:#06262a;--gold:#e0a84a;--ok:#4cc884;--off:#e48c7b}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;min-height:100vh;display:flex;justify-content:center;padding:20px 16px 40px}
+main{width:100%;max-width:460px}
+.top{display:flex;justify-content:flex-end;gap:6px;margin-bottom:18px}
+.top button{font:inherit;font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--card);color:var(--mute);padding:6px 12px;border-radius:999px;cursor:pointer}
+.top button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+h1{font-size:clamp(40px,12vw,56px);line-height:1.02;font-weight:800;letter-spacing:-.03em;margin:0 0 10px}
+h1 span{display:block;color:var(--accent)}
+.sub{color:var(--mute);margin:0 0 22px;font-size:17px}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:6px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line);margin-bottom:18px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--off)}
+.status.open .dot{background:var(--ok)}
+.actions{display:grid;gap:10px;margin-bottom:22px}
+.btn{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 18px;font-weight:600;min-height:56px}
+.btn small{display:block;font-weight:400;color:var(--mute);font-size:14px;word-break:break-all}
+.btn.main{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.main small{color:inherit;opacity:.85}
+.btn svg{flex:none;width:22px;height:22px}
+.info{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:10px}
+.info h2{font-size:16px;margin:0 0 8px;font-weight:800}
+.info p{margin:0;color:var(--mute)}
+.row{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px dashed var(--line)}
+.row:last-child{border:0}
+.row b{font-weight:600}
+.maps{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.maps a{color:var(--accent);font-weight:700;text-decoration:none;border-bottom:2px solid var(--accent)}
+.svc{list-style:none;margin:0;padding:0}
+.svc li{padding:8px 0 8px 28px;position:relative;border-bottom:1px dashed var(--line);font-weight:600}
+.svc li:last-child{border:0}
+.svc li::before{content:"";position:absolute;left:4px;top:15px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+footer{text-align:center;color:var(--mute);font-size:13px;margin-top:18px}
+</style>
+</head>
+<body>
+<main>
+<div class="top" role="group" aria-label="Language">
+<button data-l="ru">RU</button><button data-l="uz">UZ</button><button data-l="en">EN</button>
+</div>
+
+<h1>Одил<span data-t="and">и Кирил</span></h1>
+<p class="sub" data-t="city"></p>
+<div class="status" id="st"><i class="dot"></i><span id="stt"></span></div>
+
+<div class="actions">
+<a class="btn main" href="tel:+998907114806">
+<span><span data-t="call"></span><small>+998 90 711 48 06</small></span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+</a>
+<a class="btn" href="https://t.me/psnplati" target="_blank" rel="noopener">
+<span>Telegram<small>@psnplati</small></span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>
+</a>
+<a class="btn" href="https://t.me/PS4PS5GAMESUZ" target="_blank" rel="noopener">
+<span><span data-t="chan"></span><small>t.me/PS4PS5GAMESUZ</small></span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M7 10v4M5 12h4M16 11h.01M18 13h.01"/></svg>
+</a>
+<a class="btn" href="mailto:gendnc4@gmail.com">
+<span>Email<small>gendnc4@gmail.com</small></span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+</a>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=39.76350994056485,64.43028747385937" target="_blank" rel="noopener">
+<span><span data-t="map"></span><small data-t="addr"></small></span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+</a>
+</div>
+
+<section class="info">
+<h2 data-t="svc"></h2>
+<ul class="svc"><li data-t="s1"></li><li data-t="s2"></li><li data-t="s3"></li><li data-t="s4"></li><li data-t="s5"></li></ul>
+</section>
+
+<section class="info">
+<h2 data-t="hrs"></h2>
+<div class="row"><b data-t="d1"></b><span>10:30 – 19:00</span></div>
+<div class="row"><b data-t="d2"></b><span>13:00 – 19:00</span></div>
+</section>
+
+<section class="info">
+<h2 data-t="where"></h2>
+<p data-t="addr"></p>
+<div class="maps">
+<a href="https://www.google.com/maps/search/?api=1&query=39.76350994056485,64.43028747385937" target="_blank" rel="noopener">Google Maps</a>
+<a href="https://yandex.com/maps/?pt=64.43028747385937,39.76350994056485&z=17&l=map" target="_blank" rel="noopener">Yandex Maps</a>
+<a href="https://www.openstreetmap.org/?mlat=39.76350994056485&mlon=64.43028747385937#map=18/39.76350994056485/64.43028747385937" target="_blank" rel="noopener">OpenStreetMap</a>
+</div>
+</section>
+<footer>© Одил и Кирил</footer>
+</main>
+
+<script>
+var T={
+ru:{and:"и Кирил",city:"Компьютерная помощь и игры в Бухаре",chan:"Канал игр для PS4 и PS5",call:"Позвонить",map:"Открыть на карте",addr:"Бухара, ул. Мустакиллик, дом 26",hrs:"Часы работы",svc:"Чем мы занимаемся",s1:"Установка антивирусов",s2:"Установка программ",s3:"Установка Windows",s4:"Установка игр для ПК",s5:"Установка игр для PS4 и PS5",d1:"Пн – Сб",d2:"Воскресенье",where:"Где нас найти",open:"Сейчас открыто",closed:"Сейчас закрыто"},
+uz:{and:"va Kirill",city:"Buxoroda kompyuter yordami va o‘yinlar",chan:"PS4 va PS5 o‘yinlar kanali",call:"Qo‘ng‘iroq qilish",map:"Xaritada ochish",addr:"Buxoro, Mustaqillik ko‘chasi, 26-uy",hrs:"Ish vaqti",svc:"Biz nima bilan shug‘ullanamiz",s1:"Antivirus o‘rnatish",s2:"Dasturlarni o‘rnatish",s3:"Windows o‘rnatish",s4:"Kompyuter uchun o‘yinlar o‘rnatish",s5:"PS4 va PS5 uchun o‘yinlar o‘rnatish",d1:"Du – Sha",d2:"Yakshanba",where:"Bizni qayerdan topasiz",open:"Hozir ochiq",closed:"Hozir yopiq"},
+en:{and:"and Kirill",city:"Computer help and games in Bukhara",chan:"PS4 and PS5 games channel",call:"Call",map:"Open on map",addr:"26 Mustakillik St, Bukhara",hrs:"Opening hours",svc:"What we do",s1:"Antivirus installation",s2:"Software installation",s3:"Windows installation",s4:"PC game installation",s5:"PS4 and PS5 game installation",d1:"Mon – Sat",d2:"Sunday",where:"How to find us",open:"Open now",closed:"Closed now"}
+};
+var lang="ru";
+try{lang=localStorage.getItem("l")||""}catch(e){}
+if(!T[lang]){var n=(navigator.language||"ru").slice(0,2);lang=T[n]?n:"ru"}
+function isOpen(){
+ var p=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Tashkent",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date());
+ var o={};p.forEach(function(x){o[x.type]=x.value});
+ var m=(+o.hour%24)*60+ +o.minute, sun=o.weekday==="Sun";
+ return m>=(sun?13*60:10*60+30)&&m<19*60;
+}
+function render(){
+ document.documentElement.lang=lang;
+ document.querySelectorAll("[data-t]").forEach(function(e){e.textContent=T[lang][e.dataset.t]});
+ document.querySelectorAll(".top button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l===lang)});
+ var o=isOpen(),s=document.getElementById("st");
+ s.className="status"+(o?" open":"");
+ document.getElementById("stt").textContent=o?T[lang].open:T[lang].closed;
+}
+document.querySelectorAll(".top button").forEach(function(b){b.onclick=function(){lang=b.dataset.l;try{localStorage.setItem("l",lang)}catch(e){}render()}});
+render();
+</script>
+</body>
+</html>
